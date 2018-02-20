@@ -11,26 +11,10 @@ exercise.load = function(salary, boston){
 
 // get salaries larger than given salary
 exercise.findBiggerSalaries = function(){
-
-    // ---------------------------------------------------
-    //   YOUR CODE
-    //
-    //     Return a filtered list of salaries.
-    //     Return salaries larger than exercise.salary
-    //
-    //     Example: salaries larger than 300K is 8
-    // ---------------------------------------------------
-
+    return exercise.salaries.filter(datum => parseFloat(datum[18]) > exercise.salary);
 };
 
 // filter function
 exercise.largerSalary = function largerSalary(item){
-
-    // ---------------------------------------------------
-    //   YOUR CODE
-    //
-    //     Return a boolean (true/false) if item
-    //     is larger than exercise.salary
-    // ---------------------------------------------------
-
+    return (parseFloat(item[18]) > exercise.salary);
 };
